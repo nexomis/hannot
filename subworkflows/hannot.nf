@@ -61,7 +61,7 @@ process MINIPROT {
   script:
   """
   #!/bin/bash
-  miniprot -t $task.cpus --gff $genome_fasta $prot_fasta > out_annot.gff
+  miniprot $params.miniprot_opts -t $task.cpus --gff $genome_fasta $prot_fasta > out_annot.gff
   grep -v "##PAF" out_annot.gff > annot.gff
   """
 }
