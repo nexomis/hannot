@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/nexomis/compress_fq/1.0.2/nextflow_schema.json",
+    "$id": "https://raw.githubusercontent.com/nexomis/hannot/1.0.3/nextflow_schema.json",
     "title": "nexomis/hannot pipeline parameters",
     "description": "Homology-based annotation of sequences",
     "type": "object",
