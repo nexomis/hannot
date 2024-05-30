@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-include { validateParameters; paramsHelp; paramsSummaryLog; samplesheetToList } from 'plugin/nf-schema'
+include { validateParameters; paramsHelp; paramsSummaryLog } from 'plugin/nf-validation'
 
 log.info """
     |            #################################################

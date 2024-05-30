@@ -4,7 +4,7 @@
     "title": "nexomis/hannot pipeline parameters",
     "description": "Homology-based annotation of sequences",
     "type": "object",
-    "defs": {
+    "definitions": {
         "input_output_options": {
             "title": "Input/output options",
             "type": "object",
@@ -21,7 +21,7 @@
                     "format": "file-path",
                     "description": "Genome sequence file in FASTA format."
                 },
-                "out_dir": {
+                "output_dir": {
                     "type": "string",
                     "format": "directory-path",
                     "description": "The output directory where the results will be saved."
