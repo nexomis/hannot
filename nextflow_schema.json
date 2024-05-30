@@ -1,0 +1,97 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/nf-core/testpipeline/master/nextflow_schema.json",
+    "title": "nexomis/hannot pipeline parameters",
+    "description": "Homology-based annotation of sequences",
+    "type": "object",
+    "defs": {
+        "input_output_options": {
+            "title": "Input/output options",
+            "type": "object",
+            "description": "Define where the pipeline should find input data and save output data.",
+            "required": ["prot_fasta", "genome_fasta", "out_dir"],
+            "properties": {
+                "prot_fasta": {
+                    "type": "string",
+                    "format": "file-path",
+                    "description": "Protein sequence file in FASTA format."
+                },
+                "genome_fasta": {
+                    "type": "string",
+                    "format": "file-path",
+                    "description": "Genome sequence file in FASTA format."
+                },
+                "out_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "description": "The output directory where the results will be saved."
+                },
+                "publish_dir_mode": {
+                    "type": "string",
+                    "description": "PublishDir mode for process",
+                    "default": "link"
+                }
+            }
+        },
+        "annotation_options": {
+            "title": "Annotation options",
+            "type": "object",
+            "description": "Settings related to the annotation of sequences.",
+            "properties": {
+                "revcomp_from_annot": {
+                    "type": "boolean",
+                    "description": "Reverse complement based on annotation.",
+                    "default": false
+                },
+                "regex_prot_name": {
+                    "type": "string",
+                    "default": "^>.*GN=([^ ]+).*$",
+                    "description": "Regex pattern to extract protein names from annotations."
+                },
+                "miniprot_opts": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Options for the Miniprot software."
+                }
+            }
+        },
+        "resources_options": {
+            "title": "Resources options",
+            "type": "object",
+            "description": "Define the default resources for Nextflow processes.",
+            "properties": {
+                "ncpus_low": {
+                    "type": "integer",
+                    "default": 4,
+                    "description": "Number of CPUs for low resource processes."
+                },
+                "ncpus_med": {
+                    "type": "integer",
+                    "default": 8,
+                    "description": "Number of CPUs for medium resource processes."
+                },
+                "ncpus_high": {
+                    "type": "integer",
+                    "default": 16,
+                    "description": "Number of CPUs for high resource processes."
+                },
+                "biocontainers_registry": {
+                    "type": "string",
+                    "default": "public.ecr.aws",
+                    "description": "Domain for the biocontainers registry."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/defs/input_output_options"
+        },
+        {
+            "$ref": "#/defs/annotation_options"
+        },
+        {
+            "$ref": "#/defs/resources_options"
+        }
+    ]
+}
