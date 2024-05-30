@@ -85,13 +85,13 @@
     },
     "allOf": [
         {
-            "$ref": "#/defs/input_output_options"
+            "$ref": "#/definitions/input_output_options"
         },
         {
-            "$ref": "#/defs/annotation_options"
+            "$ref": "#/definitions/annotation_options"
         },
         {
-            "$ref": "#/defs/resources_options"
+            "$ref": "#/definitions/resources_options"
         }
     ]
 }
