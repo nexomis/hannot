@@ -1,0 +1,35 @@
+##gff-version 3
+CY002071.1	miniprot	mRNA	28	2307	3742	+	.	ID=MP000001;Rank=1;Identity=0.9513;Positive=0.9842;Target=sp|P03428|PB2_I34A1 1 759
+CY002071.1	miniprot	CDS	28	2304	3742	+	0	Parent=MP000001;Rank=1;Identity=0.9513;Target=sp|P03428|PB2_I34A1 1 759
+CY002071.1	miniprot	stop_codon	2305	2307	0	+	0	Parent=MP000001;Rank=1
+CY002070.1	miniprot	mRNA	25	2298	3849	+	.	ID=MP000002;Rank=1;Identity=0.9590;Positive=0.9934;Target=sp|P03431|RDRP_I34A1 1 757
+CY002070.1	miniprot	CDS	25	2295	3849	+	0	Parent=MP000002;Rank=1;Identity=0.9590;Target=sp|P03431|RDRP_I34A1 1 757
+CY002070.1	miniprot	stop_codon	2296	2298	0	+	0	Parent=MP000002;Rank=1
+CY002069.1	miniprot	mRNA	59	2209	3612	-	.	ID=MP000003;Rank=1;Identity=0.9455;Positive=0.9804;Target=sp|P03433|PA_I34A1 1 716
+CY002069.1	miniprot	CDS	62	2209	3612	-	0	Parent=MP000003;Rank=1;Identity=0.9455;Target=sp|P03433|PA_I34A1 1 716
+CY002069.1	miniprot	stop_codon	59	61	0	-	0	Parent=MP000003;Rank=1
+CY002067.1	miniprot	mRNA	25	1521	2422	-	.	ID=MP000004;Rank=1;Identity=0.9177;Positive=0.9719;Target=sp|P03466|NCAP_I34A1 1 498
+CY002067.1	miniprot	CDS	28	1521	2422	-	0	Parent=MP000004;Rank=1;Identity=0.9177;Target=sp|P03466|NCAP_I34A1 1 498
+CY002067.1	miniprot	stop_codon	25	27	0	-	0	Parent=MP000004;Rank=1
+CY002066.1	miniprot	mRNA	20	1411	943	+	.	ID=MP000005;Rank=1;Identity=0.4289;Positive=0.5796;Target=sp|P03468|NRAM_I34A1 1 448
+CY002066.1	miniprot	CDS	20	1411	943	+	0	Parent=MP000005;Rank=1;Identity=0.4289;Target=sp|P03468|NRAM_I34A1 1 448
+CY002065.1	miniprot	mRNA	26	784	1224	+	.	ID=MP000006;Rank=1;Identity=0.9524;Positive=0.9802;Target=sp|P03485|M1_I34A1 1 252
+CY002065.1	miniprot	CDS	26	781	1224	+	0	Parent=MP000006;Rank=1;Identity=0.9524;Target=sp|P03485|M1_I34A1 1 252
+CY002065.1	miniprot	stop_codon	782	784	0	+	0	Parent=MP000006;Rank=1
+CY002068.1	miniprot	mRNA	27	719	1030	+	.	ID=MP000007;Rank=1;Identity=0.8478;Positive=0.9304;Target=sp|P03496|NS1_I34A1 1 230
+CY002068.1	miniprot	CDS	27	716	1030	+	0	Parent=MP000007;Rank=1;Identity=0.8478;Target=sp|P03496|NS1_I34A1 1 230
+CY002068.1	miniprot	stop_codon	717	719	0	+	0	Parent=MP000007;Rank=1
+CY002065.1	miniprot	mRNA	26	1007	463	+	.	ID=MP000008;Rank=1;Identity=0.8866;Positive=0.9485;Target=sp|P06821|M2_I34A1 1 97
+CY002065.1	miniprot	CDS	26	51	41	+	0	Parent=MP000008;Rank=1;Identity=1.0000;Target=sp|P06821|M2_I34A1 1 8
+CY002065.1	miniprot	CDS	740	1004	422	+	1	Parent=MP000008;Rank=1;Identity=0.8750;Target=sp|P06821|M2_I34A1 9 97
+CY002065.1	miniprot	stop_codon	1005	1007	0	+	0	Parent=MP000008;Rank=1
+CY002068.1	miniprot	mRNA	27	864	552	+	.	ID=MP000009;Rank=1;Identity=0.9174;Positive=0.9339;Target=sp|P03508|NEP_I34A1 1 121
+CY002068.1	miniprot	CDS	27	56	44	+	0	Parent=MP000009;Rank=1;Identity=0.9000;Target=sp|P03508|NEP_I34A1 1 10
+CY002068.1	miniprot	CDS	529	861	508	+	0	Parent=MP000009;Rank=1;Identity=0.9189;Target=sp|P03508|NEP_I34A1 11 121
+CY002068.1	miniprot	stop_codon	862	864	0	+	0	Parent=MP000009;Rank=1
+CY002069.1	miniprot	mRNA	1450	2209	1211	-	.	ID=MP000010;Rank=1;Identity=0.9273;Positive=0.9511;Frameshift=1;Target=sp|P0CK64|PAX_I34A1 1 252
+CY002069.1	miniprot	CDS	1453	2209	1211	-	0	Parent=MP000010;Rank=1;Identity=0.9273;Frameshift=1;Target=sp|P0CK64|PAX_I34A1 1 252
+CY002069.1	miniprot	stop_codon	1450	1452	0	-	0	Parent=MP000010;Rank=1
+CY002071.1	miniprot	mRNA	28	1933	2520	+	.	ID=MP000011;Rank=1;Identity=0.9508;Positive=0.9882;Target=sp|P0DOG6|PB2S1_I34A1 1 508
+CY002071.1	miniprot	CDS	28	1512	2460	+	0	Parent=MP000011;Rank=1;Identity=0.9535;Target=sp|P0DOG6|PB2S1_I34A1 1 495
+CY002071.1	miniprot	CDS	1895	1933	60	+	0	Parent=MP000011;Rank=1;Identity=0.8462;Target=sp|P0DOG6|PB2S1_I34A1 496 508
