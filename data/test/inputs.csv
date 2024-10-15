@@ -1,0 +1,8 @@
+id,genome,ref_proteome,filter_annot,revcomp,retain_only_annot
+sample1,data/test/inputs/complete_genome.fna,ref1,yes,yes,yes
+sample2,data/test/inputs/complete_genome.fna,ref1,yes,no,no
+sample3,data/test/inputs/complete_genome.fna,ref1,yes,yes,no
+f_yes,data/test/inputs/fragmented_genome.fna,ref1,yes,yes,yes
+f_filter,data/test/inputs/fragmented_genome.fna,ref1,yes,no,no
+f_revcomp,data/test/inputs/fragmented_genome.fna,ref1,yes,yes,no
+f_no,data/test/inputs/fragmented_genome.fna,ref1,no,no,no

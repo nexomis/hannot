@@ -1,0 +1,2 @@
+id,proteome,regex_prot_name
+ref1,data/test/inputs/prot.fasta,^>.*GN=([^ ]+).*$

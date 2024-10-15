@@ -2,3 +2,6 @@
 /work
 /data/test/out_dir
 /.nextflow
+/data/test/test*yml
+/data/test/out_*
+out_*

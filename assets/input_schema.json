@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/nexomis/hannot/main/assets/input_schema.json",
+    "title": "Sample sheet format for --input",
+    "description": "Assemblies to annot",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_]+$",
+          "uniqueItems": true,
+          "description": "Sample unique IDs (alphanum or _)"
+        },
+        "genome": {
+          "type": "string",
+          "pattern": "^\\S+\\.(fasta|fa|fna)(\\.)?(gz|z|)?$",
+          "format": "file-path",
+          "description": "fasta file with the genome assembly"
+        },
+        "ref_proteome": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_]+$",
+          "uniqueItems": true,
+          "description": "reference of the proteome in --prot"
+        },
+        "filter_annot":  {
+          "type": "string",
+          "default" : "yes",
+          "description": "Filter annot to keep only the closest homolog"
+        },
+        "revcomp":  {
+          "type": "string",
+          "default" : "yes",
+          "description": "reverse complement the contigs"
+        },
+        "retain_only_annot":  {
+          "type": "string",
+          "default" : "yes",
+          "description": "Retain only annotated contigs"
+        }
+      },
+      "required": ["id", "genome", "ref_proteome"]
+    }
+  }
+

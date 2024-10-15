@@ -9,17 +9,23 @@
             "title": "Input/output options",
             "type": "object",
             "description": "Define where the pipeline should find input data and save output data.",
-            "required": ["prot_fasta", "genome_fasta", "out_dir"],
+            "required": ["input", "prot", "out_dir"],
             "properties": {
-                "prot_fasta": {
+                "input": {
                     "type": "string",
                     "format": "file-path",
-                    "description": "Protein sequence file in FASTA format."
+                    "mimetype": "text/csv",
+                    "pattern": ".csv$",
+                    "schema": "assets/input_schema.json",
+                    "description": "Path to comma-separated file containing information about the assembly to annot"
                 },
-                "genome_fasta": {
+                "prot": {
                     "type": "string",
                     "format": "file-path",
-                    "description": "Genome sequence file in FASTA format."
+                    "mimetype": "text/csv",
+                    "pattern": ".csv$",
+                    "schema": "assets/prot_schema.json",
+                    "description": "Path to comma-separated file containing the proteome to use for annotation."
                 },
                 "out_dir": {
                     "type": "string",
@@ -39,11 +45,6 @@
             "type": "object",
             "description": "Settings related to the annotation of sequences.",
             "properties": {
-                "revcomp_from_annot": {
-                    "type": "boolean",
-                    "description": "Reverse complement based on annotation.",
-                    "default": false
-                },
                 "regex_prot_name": {
                     "type": "string",
                     "default": "^>.*GN=([^ ]+).*$",
@@ -51,7 +52,7 @@
                 },
                 "miniprot_opts": {
                     "type": "string",
-                    "default": "",
+                    "default": "-k 3 -L 5 -O 5 -n 1 -N 1000 -l 3 -E 0 -J 5 -F 8 -B 5 --outs 0.1 --outn 5",
                     "description": "Options for the Miniprot software."
                 }
             }
