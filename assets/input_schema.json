@@ -22,7 +22,6 @@
         "ref_proteome": {
           "type": "string",
           "pattern": "^[a-zA-Z0-9_]+$",
-          "uniqueItems": true,
           "description": "reference of the proteome in --prot"
         },
         "filter_annot":  {
